@@ -7,9 +7,22 @@ public class EditorAudio {
         int silezio = 0;
 
         int rumoreBianco = 0;
+        /**
+         * @rumoreBiancoTag
+         * tutti i rumori imprevisti ma che si ripetono.
+         * esepio: il tichetio di una matita sul banco.
+         *      il rumore delle ventole di un server nel altra stanza.
+         */
+        int rumoreBiancoTag = 0;
         int rumore;
         int suono;
         int parlato;
+
+        /**
+         * @parlatoTag
+         * identifica il parlato delle persone e tagga le voci delle persone.
+         */
+        int parlatoTag = 0;
 
         /**
          *

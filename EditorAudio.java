@@ -4,7 +4,8 @@ public class EditorAudio {
 
     public static void main(String[] args) {
 
-        int silezio = 0;
+        // long per fare i mili secondi
+        long silezio = 0;
 
         int rumoreBianco = 0;
         /**
@@ -13,10 +14,13 @@ public class EditorAudio {
          * esepio: il tichetio di una matita sul banco.
          *      il rumore delle ventole di un server nel altra stanza.
          */
-        int rumoreBiancoTag = 0;
-        int rumore;
-        int suono;
-        int parlato;
+        long rumoreBiancoTag = 0;
+        long rumore;
+        long suono;
+        long parlato;
+
+
+
 
         /**
          * @parlatoTag

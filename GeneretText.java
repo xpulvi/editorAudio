@@ -1,5 +1,10 @@
 package allenamento_test_sbara.esercizi.editor_audio;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
 /**
  * @author Nicolò Pulvirenti
  * genera il tuesto del audio doppo aver editato il file audio.
@@ -12,4 +17,29 @@ package allenamento_test_sbara.esercizi.editor_audio;
  */
 public class GeneretText {
 
+    // TODO     guarda questa documentazione: https://www.javatpoint.com/q/5931/java-code-for-converting-audio-to-text-and-video-to-audio
+    /**TODO trova un nome piu corto per questa variabile
+     *
+     */
+    protected String testoEstratoAudio;
+
+    /** prende il testo estratto dal audio e lo mete nel file
+     *
+     * @param testoEstratoAudio
+     * @param filePath
+     */
+    public void write(String testoEstratoAudio, String filePath) {
+
+        try {
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filePath));
+            bufferedWriter.write(testoEstratoAudio);
+            bufferedWriter.newLine();
+            bufferedWriter.write(testoEstratoAudio);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
+
+
